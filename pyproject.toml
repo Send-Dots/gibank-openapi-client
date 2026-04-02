@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gibank-openapi-client"
+version = "0.1.0"
+description = "Auto-generated Python client for the GiBank Base API"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28",
+    "attrs",
+    "python-dateutil",
+]
+
+[project.optional-dependencies]
+dev = [
+    "openapi-python-client==0.28.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["gibank_client"]
