@@ -5,3 +5,7 @@ dist/
 build/
 .venv/
 *.egg
+.env*
+*.pem
+*.key
+credentials.json
