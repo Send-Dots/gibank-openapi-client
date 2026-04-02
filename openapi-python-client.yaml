@@ -1,0 +1,2 @@
+project_name_override: gibank-openapi-client
+package_name_override: gibank_client
